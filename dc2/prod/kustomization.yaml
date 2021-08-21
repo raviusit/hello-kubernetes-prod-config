@@ -5,6 +5,6 @@ commonAnnotations:
   app.successfactors.com/datacenter: dc2
 resources:
   - ingress.yaml
-  - https://github.tools.sap/k8s-playground/hello-kubernetes-dev-config/base/?ref=v1.0
+  - https://github.com/raviusit/hello-kubernetes-dev-config/base/?ref=v1.0
 patchesStrategicMerge:
   - custom-env.yaml
