@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonAnnotations:
+  app.successfactors.com/env-type: preview
+  app.successfactors.com/datacenter: dc2
+resources:
+  - ingress.yaml
+  - https://github.tools.sap/k8s-playground/hello-kubernetes-dev-config/base/?ref=v1.0
+patchesStrategicMerge:
+  - custom-env.yaml
